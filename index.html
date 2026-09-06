@@ -191,9 +191,80 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+    .reviews {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f5f9f7;
+}
+
+.reviews h2 {
+  color: #168f5b;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+}
+
+.stars {
+  color: #f5b301;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.review-card p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.review-card h3 {
+  color: #168f5b;
+  margin-top: 15px;
+} 
 </style>
 </head>
+<section class="reviews">
+  <h2>⭐ آراء مستخدمي منصة صحتك ⭐</h2>
 
+  <div class="reviews-container">
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"منصة صحتك ساعدتني ألقى طبيب مناسب بسرعة وسهولة."</p>
+      <h3>أحمد محمد</h3>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"موقع مرتب وسهل الاستخدام وحصلت على معلومات الطبيب بسرعة."</p>
+      <h3>سارة علي</h3>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"فكرة المنصة كلش مفيدة والخدمة ممتازة."</p>
+      <h3>محمد حسن</h3>
+    </div>
+
+  </div>
+</section>
 <body>
 
 <header>
