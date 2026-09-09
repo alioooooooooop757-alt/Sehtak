@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آراء الزبائن</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f9f7;
+            color: #123f3b;
+        }
+
+        header {
+            background: #123f3b;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #dcebea;
+        }
+
+        .reviews {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .reviews-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .back {
+            display: block;
+            width: fit-content;
+            margin: 35px auto 0;
+            background: #123f3b;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #123f3b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>آراء الزبائن ❤️</h1>
+        <p>شوفوا تجارب وآراء زبائننا</p>
+    </header>
+
+    <section class="reviews">
+
+        <h2 class="reviews-title">شنو گالوا زبائننا؟</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <h3>محمد</h3>
+                <p>
+                    خدمة رائعة وسريعة، والتعامل جداً محترم.
+                    أنصح الجميع بتجربة الخدمة.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <h3>سارة</h3>
+                <p>
+                    تجربة جميلة جداً، الموقع سهل والخدمة ممتازة.
+                    شكراً لكم ❤️
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <h3>علي</h3>
+                <p>
+                    تعامل راقي وسرعة بالرد، أكيد راح أرجع
+                    أستخدم الخدمة مرة ثانية.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back">⬅ العودة للصفحة الرئيسية</a>
+
+    </section>
+
+    <footer>
+        جميع الحقوق محفوظة © 2026
+    </footer>
+
+</body>
+  </html>
